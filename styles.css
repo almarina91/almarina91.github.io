@@ -1,4 +1,32 @@
-body{
+body {
     background-color: gainsboro;
+    color: #124887;
+    font-family: Optima, Arial, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.introduction{
+    font-size: 6vh;
+    font-weight: normal;
+}
+.cv{
+
+}
+
+.contact-button {
+    font-family: Optima, Arial, sans-serif;
+    background-color: gainsboro;
+    border: none;
+    cursor: pointer;
+    font-size: 2vh;
+    margin-right: 2vw
+}
+
+.contact-button:hover{
     color: #124887;
 }
