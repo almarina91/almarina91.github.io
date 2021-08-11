@@ -2,6 +2,15 @@ body {
     background-color: #f2b8c2;
     color: #f5f5f5;
     font-family: Optima, Arial, sans-serif;
+}
+.first{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+.project-page{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -9,17 +18,39 @@ body {
     text-align: left;
     min-height: 100vh;
 }
-
 .introduction{
     font-size: 6vh;
     font-weight: normal;
     max-width: 50%;
+    min-height: 100vh;
+}
+.intro-text{
+    margin-top:55%
+}
+.project-title{
+    font-weight: bold;
+    font-size: 3vh;
+}
+a {
+    text-decoration: none;
+    font-size: 3vh;
+    font-weight: bold;
+    color: white;
+}
+a:hover {
+    color: #ab757e;
 }
 
 .project {
-
+    max-width: 30vw
 }
 
+.project-icon{
+    height: 5vh;
+}
+.images{
+    margin-right: 3vw
+}
 .cv{
     background: none;
     border: none;
