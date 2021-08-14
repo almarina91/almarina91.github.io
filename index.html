@@ -2,17 +2,10 @@
 <html>
     <head>
         <title>Marina Grujic</title>
-        <link rel="stylesheet"
-              href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-              integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-              crossorigin="anonymous">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="/styles.css">
     </head>
     <body>
-        <div class="first">
+        <div class="first" id="first">
             <button class="cv">CV</button>
             <div class="introduction">
                 <p class="intro-text">
@@ -20,132 +13,40 @@
                     a fullstack web developer <br/>
                     located in Eindhoven, NL.
                 </p>
-                <button class="arrow-down">projects <br/> &#8595;</button>
+                <button class="arrow-down"
+                        onClick='document.getElementById("project-page").scrollIntoView()'>
+                    projects <br/> &#8595;
+                </button>
             </div>
             <button class="contact">CONTACT</button>
         </div>
-        <div class="project-page">
-            <div class="images">
-            <div id="positions" class="carousel slide" data-ride="carousel">
-                <ul class="carousel-indicators">
-                    <li data-target="#positions" data-slide-to="0" class="active"></li>
-                    <li data-target="#positions" data-slide-to="1"></li>
-                    <li data-target="#positions" data-slide-to="2"></li>
-                    <li data-target="#positions" data-slide-to="3"></li>
-                </ul>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="static/logo512.png" alt="Positions" height="300">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="static/positions%20tablet.png" alt="Positions on tablet" height="300">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="static/positions%20iphone2.png" alt="Positions on iphone" height="300">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="static/positions%20macbook.png" alt="Positions on macbook" height="300">
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#positions" data-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </a>
-                <a class="carousel-control-next" href="#positions" data-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </a>
-            </div>
-            </div>
-            <div class="project">
-                <span class="project-title">Positions</span>
-                <p>This app functions as a virtual natal chart reader.</p>
-                <p>Simple to use, this app provides very personalized horoscopes based on your natal chart. User data is not saved in the database.</p>
-                <p>TECH: React, Node.js, Express, MongoDB</p>
-
-                <a href='https://almarina91positions.github.io'>visit</a>
-            </div>
-        </div>
-        <div class="project-page">
-            <div class="images">
-                <div id="apollo" class="carousel slide" data-ride="carousel">
-                    <ul class="carousel-indicators">
-                        <li data-target="#apollo" data-slide-to="0" class="active"></li>
-                        <li data-target="#apollo" data-slide-to="1"></li>
-                        <li data-target="#apollo" data-slide-to="2"></li>
-                        <li data-target="#apollo" data-slide-to="3"></li>
-                    </ul>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="static/apolologo.png" alt="Apollo" height="300">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="static/positions%20tablet.png" alt="Positions on tablet" height="300">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="static/positions%20iphone2.png" alt="Positions on iphone" height="300">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="static/positions%20macbook.png" alt="Positions on macbook" height="300">
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#apollo" data-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                    </a>
-                    <a class="carousel-control-next" href="#apollo" data-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                    </a>
-                </div>
-            </div>
+        <div class="project-page" id="project-page">
             <div class="project">
                 <span class="project-title">Apollo</span>
                 <p>This app offers all the basic functionalities of a running app.</p>
                 <p>Easy to use app that tracks your progress in following one of the running plans. If allowed, it also displays the distance, calories burned, time and more.</p>
                 <p>TECH: React, Node.js, Express, MongoDB</p>
-                <p>slika</p>
                 <a href='https://almarina91apollo.github.io/#/'>visit</a>
             </div>
-        </div>
-        <div class="project-page">
-            <div class="images">
-                <div id="pm" class="carousel slide" data-ride="carousel">
-                    <ul class="carousel-indicators">
-                        <li data-target="#pm" data-slide-to="0" class="active"></li>
-                        <li data-target="#pm" data-slide-to="1"></li>
-                        <li data-target="#pm" data-slide-to="2"></li>
-                        <li data-target="#pm" data-slide-to="3"></li>
-                    </ul>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="static/pmlogo.svg" alt="Project Management App" height="300">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="static/positions%20tablet.png" alt="Positions on tablet" height="300">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="static/positions%20iphone2.png" alt="Positions on iphone" height="300">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="static/positions%20macbook.png" alt="Positions on macbook" height="300">
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#pm" data-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                    </a>
-                    <a class="carousel-control-next" href="#pm" data-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                    </a>
-                </div>
-            </div>
-            <div class="project">
+            <div class="project rose">
                 <span class="project-title">Project Management App</span>
-                <p>A full solution for managing small projects (project management system).</p>
-                <p>Projects are used to organise tasks into logical units.
-                    Users can have one of the three roles: Administrator, Project Manager and Developer.
-                    Depending on the role, user might be able to perform
-                    CRUD operations on projects, tasks and users.</p>
+                <p>A full solution for managing small projects.</p>
+                <p>Projects are used to organise tasks into logical units. Users can have one of the three roles: Administrator, Project Manager and Developer.
+                </p>
                 <p>TECH: React, Node.js, Express, MongoDB</p>
-                <p>slika</p>
-                <a href='https://almarina91pm.github.io.'>visit</a>
+                <a class='rose' href='https://almarina91pm.github.io.'>visit</a>
             </div>
+            <div class="project dark-rose">
+                <span class="project-title">Positions</span>
+                <p>This app functions as a virtual natal chart reader.</p>
+                <p>Simple to use, this app provides very personalized horoscopes based on your natal chart. User data is not saved in the database.</p>
+                <p>TECH: React, Node.js, Express, MongoDB</p>
+                <a class="dark-rose" href='https://almarina91positions.github.io'>visit</a>
+            </div>
+            <button class="arrow-up"
+                    onClick='document.getElementById("first").scrollIntoView()'>
+                &#8593;
+            </button>
         </div>
     </body>
 </html>
