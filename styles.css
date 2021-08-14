@@ -22,6 +22,49 @@ body {
     text-align: left;
     min-height: 100vh;
 }
+.contacts{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 100vw;
+    position: absolute;
+    top: 100vh;
+    right: -100vw;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+.cv-page{
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+    position: absolute;
+    min-width: 100vw;
+    top: 0;
+    right: -100vw;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+.personal-info{
+    margin-right: 4vw;
+    max-width: 30vw;
+    font-size: 2vh;
+}
+.skills{
+    max-width: 50vw;
+    font-size: 2vh;
+}
+.download-icon{
+    background: none;
+    color: white;
+    border:none;
+    font-size: 4vh;
+}
+.download-icon:hover{
+    cursor: pointer;
+    color: #4f2d33;
+}
 .introduction{
     font-size: 6vh;
     font-weight: normal;
@@ -42,7 +85,7 @@ a {
     color: white;
 }
 a:hover {
-    color: #ab757e;
+    color: #a2a2a2;
 }
 
 .project {
@@ -51,6 +94,7 @@ a:hover {
     border: 0 solid;
     border-bottom-width: 1px;
     margin-bottom: 3vh;
+    margin-top: 2vh;
 }
 
 .project-icon{
@@ -65,9 +109,9 @@ a:hover {
     color: white;
     font-weight: bold;
     font-size: 5vh;
-    transform: rotate(270deg);
+    transform: rotate(90deg);
     position: absolute;
-    left: 5%
+    right: 5%
 }
 
 .cv:hover{
@@ -76,16 +120,18 @@ a:hover {
 }
 
 .contact {
+    transform: rotate(270deg);
+    position: absolute;
+    left: 5%;
+}
+.contact-icon{
     background: none;
     color: white;
     border: none;
     font-weight: bold;
     font-size: 5vh;
-    transform: rotate(90deg);
-    position: absolute;
-    right: 5%
 }
-.contact:hover{
+.contact-icon:hover{
     color: #ab757e;
     cursor: pointer;
 }
@@ -93,11 +139,12 @@ a:hover {
 .arrow-down{
     background: none;
     border: none;
-    font-size: 3vh;
     color: white;
     position: absolute;
     bottom: 5%;
-    left: 45%;
+    left: 42%;
+    font-weight: bold;
+    font-size: 4vh;
 }
 .arrow-down:hover{
     color: #ab757e;
@@ -107,10 +154,54 @@ a:hover {
 .arrow-up{
     background: none;
     border: none;
-    font-size: 3vh;
     color: white;
+    position: absolute;
+    top:105%;
+    font-weight: bold;
+    font-size: 4vh;
 }
 .arrow-up:hover{
+    color: #ab757e;
+    cursor: pointer;
+}
+.arrow-left{
+    background: none;
+    border: none;
+    color: white;
+    position: absolute;
+    left:5%;
+    font-weight: bold;
+    font-size: 4vh;
+    transform: rotate(270deg);
+}
+.arrow-left:hover{
+    color: #ab757e;
+    cursor: pointer;
+}
+.arrow-right{
+    background: none;
+    border: none;
+    color: white;
+    position: absolute;
+    right:5%;
+    font-weight: bold;
+    font-size: 4vh;
+    transform: rotate(90deg);
+}
+.arrow-right:hover{
+    color: #ab757e;
+    cursor: pointer;
+}
+.arrow-up-to-cv{
+    background: none;
+    border: none;
+    color: white;
+    position: absolute;
+    top:5%;
+    font-weight: bold;
+    font-size: 4vh;
+}
+.arrow-up-to-cv:hover{
     color: #ab757e;
     cursor: pointer;
 }

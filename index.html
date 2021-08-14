@@ -2,11 +2,100 @@
 <html>
     <head>
         <title>Marina Grujic</title>
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="/styles.css">
     </head>
     <body>
+        <div class="cv-page" id="cv-page">
+            <button class="arrow-left" onClick='document.getElementById("first").scrollIntoView()'>HOME</button>
+            <div class="personal-info">
+                <p>Name: <br/>
+                    Marina Grujic</p>
+                <p>Current residence:
+                    <br/>
+                    Eindhoven, The Netherlands
+                    <br/>
+                    (in possession of working permit)
+                </p>
+                <p>Nationality:
+                    <br/>
+                    Serbian
+                </p>
+                <p>E-mail:
+                    <br/>
+                    almarina91@gmail.com
+                </p>
+                <button onclick='window.location.href="https://www.linkedin.com/in/marina-grujic-4216b2a6/"' class="contact-icon">
+                    <i class="fa fa-linkedin-square"></i>
+                </button>
+                <button onclick='window.location.href="https://www.github.com/almarina91"' class="contact-icon">
+                    <i class="fa fa-github"></i>
+                </button>
+            </div>
+           <div class="skills">
+               <p>TECH:
+                   <br/>
+                   HTML, CSS, JavaScript, React, Node.js, Express, Mongoose, MongoDB</p>
+                <p>Work experience:
+                    <br/>2019-2020 De Bever Architecten, Architect
+                    <br/>2016-2018 Bexel Consulting, BIM modeller
+                </p>
+                <p>Education:
+                    <br/>2013-2016 Politecnico di Milano, Facolta di Architettura e Societa, MSc in Architecture
+                    <br/>2010-2013 University of Belgrade, Faculty of Architecture, BSc in Architecture
+                </p>
+               <p>Languages: Serbian, English, Dutch, Spanish, Italian, French</p>
+               <a href="./" download="marina_grujic.pdf">
+                   <button class='download-icon' type="button"><i class="fa fa-file-pdf-o" title="download PDF file" aria-hidden="true"></i></button>
+               </a>
+               <a href="./" download="marina_grujic.docx">
+                   <button class='download-icon' type="button"><i class="fa fa-file-word-o" title="download WORD file" aria-hidden="true"></i></button>
+               </a>
+               <a href="./" download="marina_grujic.pages">
+                   <button class='download-icon' type="button"><i class="fa fa-file"  title="download PAGES file" aria-hidden="true"></i></button>
+               </a>
+            </div>
+            <button class="arrow-down"
+                    onClick='document.getElementById("contacts").scrollIntoView()'>
+             CONTACT
+            </button>
+        </div>
+
+        <div id="contacts" class="contacts">
+            <button class="arrow-left"
+                    onClick='document.getElementById("project-page").scrollIntoView()'>
+                 PROJECTS
+            </button>
+            <button class="arrow-up-to-cv"
+                    onClick='document.getElementById("cv-page").scrollIntoView()'>
+                CV
+            </button>
+            <div>
+                <button onclick='window.location.href="https://www.github.com/almarina91"' class="contact-icon">
+                    <i class="fa fa-github"></i>
+                </button>
+                <a href="mailto:almarina91@gmail.com" class="contact-icon">
+                    <i class="fa fa-envelope"></i>
+                </a>
+                <button onclick='window.location.href="https://www.linkedin.com/in/marina-grujic-4216b2a6/"' class="contact-icon">
+                    <i class="fa fa-linkedin-square"></i>
+                </button>
+            </div>
+        </div>
+
         <div class="first" id="first">
-            <button class="cv">CV</button>
+            <div class="contact">
+                <button onclick='window.location.href="https://www.github.com/almarina91"' class="contact-icon">
+                    <i class="fa fa-github"></i>
+                </button>
+                <a href="mailto:almarina91@gmail.com" class="contact-icon">
+                    <i class="fa fa-envelope"></i>
+                </a>
+                <button onclick='window.location.href="https://www.linkedin.com/in/marina-grujic-4216b2a6/"' class="contact-icon">
+                    <i class="fa fa-linkedin-square"></i>
+                </button>
+            </div>
             <div class="introduction">
                 <p class="intro-text">
                     Hello! I am Marina Grujic, <br/>
@@ -15,17 +104,22 @@
                 </p>
                 <button class="arrow-down"
                         onClick='document.getElementById("project-page").scrollIntoView()'>
-                    projects <br/> &#8595;
+                    PROJECTS
                 </button>
             </div>
-            <button class="contact">CONTACT</button>
+            <button class="cv"
+                    onClick='document.getElementById("cv-page").scrollIntoView()'>
+                CV
+            </button>
         </div>
+
         <div class="project-page" id="project-page">
             <div class="project">
                 <span class="project-title">Apollo</span>
                 <p>This app offers all the basic functionalities of a running app.</p>
                 <p>Easy to use app that tracks your progress in following one of the running plans. If allowed, it also displays the distance, calories burned, time and more.</p>
                 <p>TECH: React, Node.js, Express, MongoDB</p>
+                <a href='https://almarina91apollo.github.io/#/'><i class="fa fa-github"></i></a>
                 <a href='https://almarina91apollo.github.io/#/'>visit</a>
             </div>
             <div class="project rose">
@@ -34,6 +128,7 @@
                 <p>Projects are used to organise tasks into logical units. Users can have one of the three roles: Administrator, Project Manager and Developer.
                 </p>
                 <p>TECH: React, Node.js, Express, MongoDB</p>
+                <a class='rose' href='https://almarina91pm.github.io.'><i class="fa fa-github"></i></a>
                 <a class='rose' href='https://almarina91pm.github.io.'>visit</a>
             </div>
             <div class="project dark-rose">
@@ -41,11 +136,16 @@
                 <p>This app functions as a virtual natal chart reader.</p>
                 <p>Simple to use, this app provides very personalized horoscopes based on your natal chart. User data is not saved in the database.</p>
                 <p>TECH: React, Node.js, Express, MongoDB</p>
+                <a class="dark-rose" href='https://almarina91positions.github.io'><i class="fa fa-github"></i></a>
                 <a class="dark-rose" href='https://almarina91positions.github.io'>visit</a>
             </div>
             <button class="arrow-up"
                     onClick='document.getElementById("first").scrollIntoView()'>
-                &#8593;
+               HOME
+            </button>
+            <button class="arrow-right"
+                    onClick='document.getElementById("contacts").scrollIntoView()'>
+                CONTACT
             </button>
         </div>
     </body>
