@@ -2,11 +2,12 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-    background-color: #f2b8c2;
-    color: #f5f5f5;
-    font-family: Optima, Arial, sans-serif;
-}
+/*body {*/
+/*    background-color: #f2b8c2;*/
+/*    color: #f5f5f5;*/
+/*    font-family: Optima, Arial, sans-serif;*/
+/*}*/
+
 .first{
     display: flex;
     flex-direction: row;
@@ -223,4 +224,29 @@ a:hover {
 }
 .dark-rose{
     color: #4f2d33;
+}
+
+/*mobile devices*/
+@media only screen and (max-width: 480px){
+    body {
+        background-color: #9b132a;
+        color: #f5f5f5;
+        font-family: Optima, Arial, sans-serif;
+    }
+}
+/*tablets, Ipad*/
+@media only screen and (max-width: 768px){
+    body {
+        background-color: #124887;
+        color: #f5f5f5;
+        font-family: Optima, Arial, sans-serif;
+    }
+}
+/*rest*/
+@media only screen and (min-width: 769px){
+    body {
+        background-color: #f2b8c2;
+        color: #f5f5f5;
+        font-family: Optima, Arial, sans-serif;
+    }
 }
