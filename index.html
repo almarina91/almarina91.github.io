@@ -7,83 +7,24 @@
         <link rel="stylesheet" href="/styles.css">
     </head>
     <body>
-        <div class="cv-page" id="cv-page">
-            <button class="arrow-left" onClick='document.getElementById("first").scrollIntoView()'>HOME</button>
-            <div class="personal-info">
-                <p>Name: <br/>
-                    Marina Grujic</p>
-                <p>Current residence:
-                    <br/>
-                    Eindhoven, The Netherlands
-                    <br/>
-                    (in possession of working permit)
-                </p>
-                <p>Nationality:
-                    <br/>
-                    Serbian
-                </p>
-                <p>E-mail:
-                    <br/>
-                    almarina91@gmail.com
-                </p>
-                <button onclick='window.location.href="https://www.linkedin.com/in/marina-grujic-4216b2a6/"' class="contact-icon">
-                    <i class="fa fa-linkedin-square"></i>
-                </button>
-                <button onclick='window.location.href="https://www.github.com/almarina91"' class="contact-icon">
-                    <i class="fa fa-github"></i>
-                </button>
-            </div>
-           <div class="skills">
-               <p>TECH:
-                   <br/>
-                   HTML, CSS, JavaScript, React, Node.js, Express, Mongoose, MongoDB</p>
-                <p>Work experience:
-                    <br/>2019-2020 De Bever Architecten, Architect
-                    <br/>2016-2018 Bexel Consulting, BIM modeller
-                </p>
-                <p>Education:
-                    <br/>2013-2016 Politecnico di Milano, Facolta di Architettura e Societa, MSc in Architecture
-                    <br/>2010-2013 University of Belgrade, Faculty of Architecture, BSc in Architecture
-                </p>
-               <p>Languages: Serbian, English, Dutch, Spanish, Italian, French</p>
-               <a href="./" download="marina_grujic.pdf">
-                   <button class='download-icon' type="button"><i class="fa fa-file-pdf-o" title="download PDF file" aria-hidden="true"></i></button>
-               </a>
-               <a href="./" download="marina_grujic.docx">
-                   <button class='download-icon' type="button"><i class="fa fa-file-word-o" title="download WORD file" aria-hidden="true"></i></button>
-               </a>
-               <a href="./" download="marina_grujic.pages">
-                   <button class='download-icon' type="button"><i class="fa fa-file"  title="download PAGES file" aria-hidden="true"></i></button>
-               </a>
-            </div>
-            <button class="arrow-down"
-                    onClick='document.getElementById("contacts").scrollIntoView()'>
-             CONTACT
-            </button>
-        </div>
-
-        <div id="contacts" class="contacts">
-            <button class="arrow-left"
-                    onClick='document.getElementById("project-page").scrollIntoView()'>
-                 PROJECTS
-            </button>
-            <button class="arrow-up-to-cv"
-                    onClick='document.getElementById("cv-page").scrollIntoView()'>
-                CV
-            </button>
-            <div>
-                <button onclick='window.location.href="https://www.github.com/almarina91"' class="contact-icon">
-                    <i class="fa fa-github"></i>
-                </button>
-                <a href="mailto:almarina91@gmail.com" class="contact-icon">
-                    <i class="fa fa-envelope"></i>
-                </a>
-                <button onclick='window.location.href="https://www.linkedin.com/in/marina-grujic-4216b2a6/"' class="contact-icon">
-                    <i class="fa fa-linkedin-square"></i>
-                </button>
-            </div>
-        </div>
-
+    <div class="header">
+        <button class="contact-header"
+                onClick='document.getElementById("first").scrollIntoView()'>
+            HOME
+        </button>
+        <button class="contact-header"
+                onClick='document.getElementById("project-page").scrollIntoView()'>
+            PROJECTS
+        </button>
+        <button class="contact-header"
+                onClick='document.getElementById("cv-page").scrollIntoView()'>
+            CV
+        </button>
+        <button class="contact-header"
+                onClick='document.getElementById("contacts").scrollIntoView()'>
+            CONTACT
+        </button>
+    </div>
         <div class="first" id="first">
             <div class="contact">
                 <button onclick='window.location.href="https://www.github.com/almarina91"' class="contact-icon">
@@ -147,6 +88,82 @@
                     onClick='document.getElementById("contacts").scrollIntoView()'>
                 CONTACT
             </button>
+        </div>
+        <div class="cv-page" id="cv-page">
+            <button class="arrow-left" onClick='document.getElementById("first").scrollIntoView()'>HOME</button>
+            <div class="personal-info">
+                <p>Name: <br/>
+                    Marina Grujic</p>
+                <p>Current residence:
+                    <br/>
+                    Eindhoven, The Netherlands
+                    <br/>
+                    (in possession of working permit)
+                </p>
+                <p>Nationality:
+                    <br/>
+                    Serbian
+                </p>
+                <p>E-mail:
+                    <br/>
+                    almarina91@gmail.com
+                </p>
+                <button onclick='window.location.href="https://www.linkedin.com/in/marina-grujic-4216b2a6/"' class="contact-icon">
+                    <i class="fa fa-linkedin-square"></i>
+                </button>
+                <button onclick='window.location.href="https://www.github.com/almarina91"' class="contact-icon">
+                    <i class="fa fa-github"></i>
+                </button>
+            </div>
+            <div class="skills">
+                <p>TECH:
+                    <br/>
+                    HTML, CSS, JavaScript, React, Node.js, Express, Mongoose, MongoDB</p>
+                <p>Work experience:
+                    <br/>2019-2020 De Bever Architecten, Architect
+                    <br/>2016-2018 Bexel Consulting, BIM modeller
+                </p>
+                <p>Education:
+                    <br/>2013-2016 Politecnico di Milano, Facolta di Architettura e Societa, MSc in Architecture
+                    <br/>2010-2013 University of Belgrade, Faculty of Architecture, BSc in Architecture
+                </p>
+                <p>Languages: Serbian, English, Dutch, Spanish, Italian, French</p>
+                <a href="./" download="marina_grujic.pdf">
+                    <button class='download-icon' type="button"><i class="fa fa-file-pdf-o" title="download PDF file" aria-hidden="true"></i></button>
+                </a>
+                <a href="./" download="marina_grujic.docx">
+                    <button class='download-icon' type="button"><i class="fa fa-file-word-o" title="download WORD file" aria-hidden="true"></i></button>
+                </a>
+                <a href="./" download="marina_grujic.pages">
+                    <button class='download-icon' type="button"><i class="fa fa-file"  title="download PAGES file" aria-hidden="true"></i></button>
+                </a>
+            </div>
+            <button class="arrow-down"
+                    onClick='document.getElementById("contacts").scrollIntoView()'>
+                CONTACT
+            </button>
+        </div>
+
+        <div id="contacts" class="contacts">
+            <button class="arrow-left"
+                    onClick='document.getElementById("project-page").scrollIntoView()'>
+                PROJECTS
+            </button>
+            <button class="arrow-up-to-cv"
+                    onClick='document.getElementById("cv-page").scrollIntoView()'>
+                CV
+            </button>
+            <div>
+                <button onclick='window.location.href="https://www.github.com/almarina91"' class="contact-icon">
+                    <i class="fa fa-github"></i>
+                </button>
+                <a href="mailto:almarina91@gmail.com" class="contact-icon">
+                    <i class="fa fa-envelope"></i>
+                </a>
+                <button onclick='window.location.href="https://www.linkedin.com/in/marina-grujic-4216b2a6/"' class="contact-icon">
+                    <i class="fa fa-linkedin-square"></i>
+                </button>
+            </div>
         </div>
     </body>
 </html>
